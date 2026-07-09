@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./Weather.css";
-import WeatherSettings from "./WeatherSettings";
 
 
 

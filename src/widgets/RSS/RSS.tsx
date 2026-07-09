@@ -28,9 +28,6 @@ export default function RSS({
 }: RSSProps) {
     const [items, setItems] = useState<RSSItem[]>([]);
 
-    const [feedUrl, setFeedUrl] =
-        useState(defaultFeed);
-
     async function fetchFeed(url: string) {
         try {
             const response = await fetch(
@@ -68,7 +65,6 @@ export default function RSS({
             const settings: RSSSettings =
                 JSON.parse(saved);
 
-            setFeedUrl(settings.url);
 
             fetchFeed(settings.url);
         } catch {

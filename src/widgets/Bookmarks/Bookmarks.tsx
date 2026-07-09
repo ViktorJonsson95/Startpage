@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
 import "./Bookmarks.css"
-import type {
-    WidgetProps,
-} from "../../types/widgets";
 
 type BookmarksProps = {
     widgetId: string;

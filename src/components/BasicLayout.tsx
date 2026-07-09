@@ -50,7 +50,7 @@ export default function BasicLayout({
     const [refreshKey, setRefreshKey] = useState(0);
     const boundedResize: LayoutConstraint = {
         name: "boundedResize",
-        constrainSize(item, w, h, handle, context) {
+        constrainSize(item, w, h, _handle, context) {
             return {
                 w: Math.min(w, context.cols - item.x),
                 h: Math.min(h, context.maxRows - item.y)
@@ -95,7 +95,6 @@ export default function BasicLayout({
                         }
 
                         const Component = definition.component;
-                        const SettingsComponent = definition.settingsComponent;
 
                         return (
                             <div key={widget.id} className="widget-wrapper">

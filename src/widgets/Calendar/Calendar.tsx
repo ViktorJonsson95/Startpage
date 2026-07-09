@@ -8,9 +8,7 @@ type CalendarProps = {
 };
 
 export default function Calendar({
-    widgetId,
     theme,
-    title,
 }: CalendarProps) {
     const today = new Date();
 

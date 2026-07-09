@@ -1,4 +1,4 @@
-import React from 'react'
+
 type ClockSettingsProps = {
     widgetId: string;
 };
@@ -7,7 +7,7 @@ const ClockSettings = ({
     widgetId,
 }: ClockSettingsProps) => {
     return (
-        <div>ClockSettings</div>
+        <div>ClockSettings{widgetId}</div>
     )
 }
 

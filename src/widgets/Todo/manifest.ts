@@ -1,5 +1,4 @@
 import Todo from "./Todo";
-import TodoSettings from "./TodoSettings"
 
 const manifest = {
     id: "todo",
