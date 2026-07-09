@@ -8,10 +8,7 @@ import BasicLayout from "./components/BasicLayout"
 import EditBar from "./components/EditBar";
 import "./App.css";
 
-import type {
-  WidgetManifest,
-  ActiveWidget,
-} from "./types/widgets";
+import type { ActiveWidget } from "./types/widgets";
 
 import WeatherManifest from "./widgets/Weather/manifest";
 import ClockManifest from "./widgets/Clock/manifest"
@@ -37,8 +34,6 @@ const availableWidgets = [
 export default function App() {
   const [theme, setTheme] = useState(() => { return (localStorage.getItem("theme") ?? "theme-dark"); });
   const [editMode, setEditMode] = useState(false);
-  const [widgetsMenuOpen, setWidgetsMenuOpen] = useState(false);
-  const [themeMenuOpen, setThemeMenuOpen] = useState(false);
   const [activeWidgets, setActiveWidgets] =
     useState<ActiveWidget[]>(() => {
       const saved = localStorage.getItem("activeWidgets");
