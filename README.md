@@ -284,15 +284,3 @@ App.tsx
 ```
 
 ---
-
-# Future ideas
-
-- Widget marketplace
-- Export / Import layouts
-- Cloud synchronization
-- Custom themes
-- Notes widget
-- Spotify widget
-- GitHub widget
-- Calendar events
-- AI widgets
