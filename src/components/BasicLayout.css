@@ -1,0 +1,93 @@
+.react-grid-placeholder {
+    background: rgba(59, 130, 246, 0.3);
+    border: 2px dashed #3b82f6;
+    border-radius: 16px;
+}
+
+.react-grid-item.react-grid-dragging {
+    opacity: 0.8;
+}
+
+.react-resizable-handle {
+    background-image: none;
+
+    width: 16px;
+    height: 16px;
+}
+
+.react-grid-item>.react-resizable-handle::after {
+    content: "";
+
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+
+    width: 5px;
+    height: 5px;
+
+    border-right: 2px solid var(--widget-border);
+    border-bottom: 2px solid var(--widget-border);
+}
+
+.widget-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+.widget-toolbar {
+    position: absolute;
+
+    top: 8px;
+    right: 8px;
+
+    z-index: 100;
+
+    overflow: visible;
+}
+
+.widget {
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+
+    box-sizing: border-box;
+
+    background: var(--widget-bg);
+    border: 1px solid var(--widget-border);
+    color: var(--widget-text);
+
+    border-radius: 5%;
+}
+
+.theme-menu {
+    position: absolute;
+
+    top: 40px;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.25rem;
+
+    padding: 0.5rem;
+
+    background: var(--widget-bg);
+
+    border: 1px solid var(--widget-border);
+
+    border-radius: 0.5rem;
+
+    z-index: 1000;
+}
+
+.theme-menu button {
+    text-align: left;
+}
+
+.layout {
+    height: 100vh;
+}

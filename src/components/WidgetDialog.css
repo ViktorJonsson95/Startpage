@@ -1,0 +1,15 @@
+.widget-dialog {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.widget-dialog-section h3 {
+    margin-top: 0;
+    margin-bottom: .75rem;
+}
+
+.widget-dialog hr {
+    border: none;
+    border-top: 1px solid var(--widget-border);
+}

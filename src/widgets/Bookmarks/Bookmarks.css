@@ -1,0 +1,32 @@
+.bookmarks {
+    background: var(--widget-bg);
+    border: 1px solid var(--widget-border);
+    color: var(--widget-text);
+
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+}
+
+.bookmarks.card {
+    border-radius: 1rem;
+}
+
+.bookmarks.glass {
+    backdrop-filter: blur(10px);
+
+    background:
+        rgba(255, 255, 255, 0.1);
+}
+
+.bookmarks.minimal {
+    border: none;
+
+    background: transparent;
+}
+
+.bookmarks.circle {
+    border-radius: 9999px;
+}

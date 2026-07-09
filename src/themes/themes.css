@@ -1,0 +1,33 @@
+.theme-dark {
+    --widget-bg: #1a1a1a;
+    --widget-border: #565656;
+    --widget-text: #ffffff;
+
+    --page-bg: #0b1020;
+
+    --header-bg: #252525;
+}
+
+.theme-light {
+    --widget-bg: white;
+    --widget-border: #000000;
+    --widget-text: black;
+
+    --page-bg: #f5f5f5;
+
+    --header-bg: #ececec;
+}
+
+.theme-glass {
+    --widget-bg: rgba(255, 255, 255, 0.1);
+
+    --widget-border: rgba(255, 255, 255, 0.2);
+
+    --widget-text: white;
+
+    --page-bg: #111827;
+
+    --header-bg: rgba(255, 255, 255, 0.05);
+}
+
+.theme-minimal {}
